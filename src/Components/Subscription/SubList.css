@@ -1,0 +1,45 @@
+section.main{
+    background-color: #eee;
+}
+.toggle-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc;
+    border-radius: 50px;
+    height: 23px;
+    width: 45px;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+  .toggled{
+    background:  rgba(95, 201, 52, 1);
+  }
+  .ball{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 1.5px;
+    transition: all 0.2s linear;
+  }
+  .move{
+    transform: translateX(22px);
+  }
+  .sub-plans{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  @media screen and (max-width:600px) {
+    .sub-plans{
+        flex-direction: column;
+    }
+    
+  }
